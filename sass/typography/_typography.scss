@@ -1,0 +1,143 @@
+h1{
+    @extend .txtTitle;
+    @extend .txtBlue;
+    @extend .txt48;
+    margin-bottom:20px;
+}
+
+
+h2{
+    @extend .txtTitle;
+    @extend .txt24;
+    padding:30px 0 20px;
+}
+
+h3{
+    @extend .txt18;
+    padding:20px 0;
+}
+
+//text colour
+
+.txtWhite{
+    color: $white;
+}
+
+.txtLightGrey{
+    color: $lightGrey;
+}
+.txtGrey{
+    color: $grey;
+}
+.txtDarkgrey{
+    color: $darkGrey;
+}
+.txtDarkestgrey{
+    color: $darkestGrey;
+}
+
+.txtBrown{
+    color: $brown;
+}
+
+.txtBlue{
+    color: $blue;
+}
+
+.txtRed{
+    color: $red;
+}
+
+//font weight
+
+.txtBld{
+    font-family: semibold;
+}
+
+//font
+
+.txtTitle{
+    font-family: title;
+}
+
+//text align
+
+.txtR{
+    text-align: right;
+}
+
+.txtL{
+    text-align: left;
+}
+
+.txtC{
+    text-align: center;
+}
+
+
+//font size
+
+.txt48{
+    font-size:48px;
+
+    @media #{$mob}{
+        font-size: 32px;
+    }
+}
+
+.txt30{
+    font-size:30px;
+
+    @media #{$mob}{
+        font-size: 28px;
+    }
+}
+
+.txt26{
+    font-size:26px;
+
+    @media #{$mob}{
+        font-size: 24px;
+    }
+}
+
+
+.txt24{
+    font-size:24px;
+
+    @media #{$mob}{
+        font-size: 22px;
+    }
+}
+
+.txt22{
+    font-size:22px;
+
+    @media #{$mob}{
+        font-size: 20px;
+    }
+}
+
+.txt20{
+    font-size:20px;
+
+    @media #{$mob}{
+        font-size: 18px;
+    }
+}
+
+
+
+.txt18{
+    font-size:18px;
+
+    @media #{$mob}{
+        font-size: 16px;
+    }
+}
+
+.txt14{
+    font-size: 14px;
+}
+
+

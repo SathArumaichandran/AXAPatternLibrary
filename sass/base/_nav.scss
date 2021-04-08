@@ -1,0 +1,15 @@
+.menuList{
+
+    a{
+      padding:15px 20px;
+      border-bottom: 1px solid $grey;  
+      @extend .txtBlue;
+
+      &:hover{
+          @extend .bgGrey;
+      }
+      &:focus{
+          outline:3px solid $blueFocus;
+      }
+    }
+}

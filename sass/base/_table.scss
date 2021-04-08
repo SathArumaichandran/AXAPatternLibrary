@@ -1,0 +1,338 @@
+table{
+    border-collapse: collapse;
+    margin: 10px 0;
+    width: auto;
+
+    &.type1{
+        width: 500px;
+    }
+
+    &.type2{
+        width: 400px;
+
+        @media #{$mob}{
+            max-width: 100%;
+        }
+    }
+
+}
+
+.type1{
+
+    tr{
+        &:first-child{
+            @extend .bgGrey;
+        }
+
+        &:last-child{
+            @extend .txtBld;
+        }
+    }
+
+    th,
+    td{
+        &:first-child{
+            @extend .txtL;
+        }
+        
+        @extend .txtR;
+    }
+}
+
+.type2{
+
+    tr{
+        &:first-child{
+            @extend .bgBrown;
+            @extend .txtWhite;
+
+            
+        }
+    }
+
+    th,
+    td{
+        &:first-child{
+            @extend .txtL;
+        }
+
+        @extend .txtC;
+    }
+
+    td{
+        position: relative;
+
+        &:before{
+            position: absolute;
+            left:0;
+        }
+
+        &:nth-child(3){
+
+            &:before{
+                content:'+';                   
+            }
+        }
+
+        &:last-child{
+
+            &:before{
+                content:'=';                   
+            }
+        }
+    }
+}
+
+tr{
+
+    &:nth-child(odd){
+        @extend .bgLightGrey;
+    }
+
+    
+}
+
+tr,
+th,
+td{
+    width: auto;
+    float: none;
+    table-layout: fixed;
+}
+
+th{
+    @extend .txtBld;
+}
+
+th,
+td{
+    padding: 10px;
+    vertical-align: top;
+    width: 100px;
+}
+
+.table{
+    margin: 10px 0;
+
+    &>li{
+
+        @media#{$mob}{
+            box-shadow: 0 0 10px $grey;
+            margin-bottom: 20px;
+            padding:20px;
+            background: linear-gradient(90deg, $lightGrey 50%, $white 50%);
+            border:1px solid $grey;
+
+            &:first-child{
+                display: none;
+            }
+        }
+
+        & > ul{
+            @media#{$tabDesk}{
+                display: flex;
+            }
+
+            
+        }
+
+
+        &:nth-child(odd){
+
+            &>ul{
+                
+                @media#{$tabDesk}{
+                    background:$lightGrey;
+                }
+            }
+            
+            
+        }
+
+        &:first-child{
+
+            &>ul{
+                
+                @media#{$tabDesk}{
+                    background:$brown;
+                    color:$white;
+                    @extend .txtBld;
+                }
+            }
+            
+            
+        }
+       
+      
+    }
+
+}
+
+.type1{
+    .column{
+        width: 110px;
+
+
+        @media #{$mob}{
+            width: 100%;
+        }
+
+        li{
+            padding:10px;
+        }
+    }
+
+    .row1{
+        @extend .bgGrey;
+        @extend .txtBld;
+        text-align: right;
+
+        @media #{$mob}{
+            text-align: center;
+        }
+    }
+
+    .row3{
+        @extend .bgLightGrey;
+    }
+
+    .row4{
+        @extend .txtBld;
+    }
+
+
+  
+}
+
+.column{
+
+    &:first-child{
+        @extend .txtL
+    }
+}
+
+.cl{
+    
+    padding: 15px 10px;
+    min-width: 80px;
+    border-bottom: 1px solid $grey;
+    position: relative;
+
+    &:before{
+        content:'';
+        width:calc(50% + 10px);
+        position: absolute;
+        left:0;
+    }
+
+    @media#{$mob}{
+        padding-left: calc(50% + 10px);
+    }
+
+    &:last-child{
+        @media#{$mob}{
+            border:none;
+        }
+        
+    }
+
+    @media#{$tabDesk}{
+        border: 1px solid $grey;
+    }
+}
+
+.clTag{
+    @media#{$mob}{
+        padding-left: 0;
+    }
+}
+
+.clFont{
+    &:before{
+        @media#{$mob}{
+            content:'Font';
+        }
+    }
+}
+
+.clSize{
+    &:before{
+        @media#{$mob}{
+            content:'Desktop/ Tablet size';
+        }
+    }
+}
+
+.clmSize{
+    &:before{
+        @media#{$mob}{
+            content:'Mobile size';
+        }
+    }
+}
+
+.clWeight{
+    &:before{
+        @media#{$mob}{
+            content:'Font- weight';
+        }
+    }
+}
+
+.clHeight{
+    &:before{
+        @media#{$mob}{
+            content:'line height';
+        }
+    }
+}
+
+.clColour{
+    &:before{
+        @media#{$mob}{
+            content:'Colour';
+        }
+    }
+}
+
+.clUsage{
+    &:before{
+        @media#{$mob}{
+            content:'Usage';
+        }
+    }
+}
+
+.clDate{
+
+    @media #{$tabDesk}{
+        max-width: 150px;
+    }
+    
+    &:before{
+        @media#{$mob}{
+            content:'Date';
+        }
+    }
+}
+
+.clComment{
+    &:before{
+        @media#{$mob}{
+            content:'Comment';
+        }
+    }
+}
+
+.clTeam{
+
+    @media #{$tabDesk}{
+        max-width: 150px;
+    }
+
+    &:before{
+        @media#{$mob}{
+            content:'Team';
+        }
+    }
+}

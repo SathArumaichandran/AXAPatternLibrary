@@ -1,0 +1,81 @@
+.bx{
+    position:relative;
+    padding-left:30px;
+    text-transform: uppercase;
+    //@extend .txtBld;
+
+    &:before{
+        content:'';
+        position:absolute;
+        width:25px;
+        height:25px;
+        left:0;
+        top:0;
+    }
+}
+
+.bxBlue{
+    &:before{
+        @extend .bgBlue;
+    }
+}
+
+.bxTeal{
+    &:before{
+        @extend .bgTeal;
+    }
+}
+
+.bxGreen{
+    &:before{
+        @extend .bgGreen;
+    }
+}
+
+.bxOrange{
+    &:before{
+        @extend .bgOrange;
+    }
+}
+
+.bxRedOrange{
+    &:before{
+        @extend .bgRedOrange;
+    }
+}
+
+.bxBlack{
+    &:before{
+        @extend .bgBlack;
+    }
+}
+
+.bxDarkestGrey{
+    &:before{
+        @extend .bgDarkestGrey;
+    }
+}
+
+.bxDarkGrey{
+    &:before{
+        @extend .bgDarkGrey;
+    }
+}
+
+.bxGrey{
+    &:before{
+        @extend .bgGrey;
+    }
+}
+
+.bxLightGrey{
+    &:before{
+        @extend .bgLightGrey;
+    }
+}
+
+.bxRed{
+    &:before{
+        @extend .bgRed;
+    }
+}

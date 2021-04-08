@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <ul class="menuList">
+        <li class="index"     ><a href="test.html">Index page</a></li>
+  <li class="page1"     ><a href="page1.html">Page 1</a></li>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+  
+
+
+
+        <script type="text/javascript">
+            $(function() {
+                // this will get the full URL at the address bar
+                var url = window.location.href;
+        
+                // passes on every "a" tag
+                $(".menuList a").each(function() {
+                    // checks if its the same on the address bar
+                    if (url == (this.href)) {
+                        $(this).addClass("active");
+                       
+                    }
+                });
+            });        
+        </script>
+
+        <script>
+            // ensures the optimizely object is defined globally using
+            window['optimizely'] = window['optimizely'] || [];
+
+            var vanIVRBtns = document.querySelectorAll('.axa-diagnostic-tool__selector-button');
+
+            vanIVRBtns.forEach(function(e){
+                var eventName = e.innerHTML;
+                
+                e.addEventListener('click',function(){
+            
+                    window['optimizely'].push({
+                        type: "event",
+                        eventName: "vanIVRButton",
+                        tags: {
+                            "title": eventName
+                        }
+
+                    });
+                });
+
+            });
+        </script>
+
+    </ul>
+    <button id="getTxt">
+        Get TXT
+    </button>
+    <button id="getJson">
+        Get JSON
+    </button>
+
+    <button id="getAPI">
+        Get JSON
+    </button>
+
+    <script>
+        const getTxt = document.getElementById('getTxt');
+        getTxt.addEventListener('click', () =>{
+
+            let readFile = new XMLHttpRequest;
+
+            readFile.open("Get","test.txt",true);
+            readFile.onload = function(){
+                console.log(readFile.responseText);
+            }
+            
+            readFile.send();
+        });
+
+
+        const getJson = document.getElementById('getJson');
+        getJson.addEventListener('click', () =>{
+
+            let readFile = new XMLHttpRequest;
+
+            readFile.open("Get","test.json",true);
+            readFile.onload = function(){
+                console.log(JSON.parse(readFile.responseText));
+                
+            }
+            
+            readFile.send();
+        });
+
+        const getAPI = document.getElementById('getAPI');
+        getAPI.addEventListener('click', () =>{
+
+            let readFile = new XMLHttpRequest;
+
+            readFile.open("Get","https://jsonplaceholder.typicode.com/posts",true);
+            readFile.onload = function(){
+                console.log(JSON.parse(readFile.responseText));
+                
+            }
+            
+            readFile.send();
+        });
+    </script>
+    
+</body>
+</html>
+

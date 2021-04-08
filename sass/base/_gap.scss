@@ -1,0 +1,90 @@
+.pad20{
+    padding: 20px;
+}
+
+
+
+.padTp10{
+    padding: 10px 0;
+}
+
+.padTp15{
+    padding: 15px 0;
+}
+
+.padTp50{
+    padding: 50px 0;
+}
+
+.padTp100{
+    padding: 100px 0;
+}
+
+
+
+
+.padTp18Bt2{
+    padding: 18px 0 2px;
+}
+
+.padSd70TpBt20{
+    padding: 20px 70px;
+}
+
+.padSd60TpBt20{
+    padding: 20px 60px;
+}
+
+.padSd50TpBt20{
+    padding: 20px 50px;
+}
+
+.padSd50TpBt15{
+    padding: 15px 50px;
+}
+
+.padTB15L20R50 {
+    padding: 15px 50px 15px 20px;
+}
+
+.padTB20L20R50{
+    padding: 20px;
+
+    @media#{$desk}{
+        padding: 20px 50px 20px 20px;
+    }
+}
+
+.padTB20L50R20{
+    padding: 20px;
+
+    @media#{$desk}{
+        padding: 20px 20px 20px 50px;
+    }
+}
+
+.marB100{
+    
+    @media#{$desk}{
+        margin-bottom:100px;
+    }
+    
+}
+
+.marT10B100{
+    margin: 10px 0;
+
+    @media#{$desk}{
+        margin: 10px 0 100px;
+    }
+    
+}
+
+.marT10B10{
+    margin: 10px 0
+}
+
+.marR10B10{
+    margin:0 10px 10px 0;
+    
+}

@@ -1,0 +1,31 @@
+//colour
+$white: #ffffff;
+
+$blue: #00008f;
+$lightGrey: #fafafa;
+$grey: #e5e5e5;
+$darkGrey: #cccccc;
+$darkestGrey: #5f5f5f;
+$brown:#914146;
+
+$blueFocus: #4d90fe;
+$orange: #FCD385;
+$red: #c91432;
+
+$redOrange:#C24E00;
+$green: #148936;
+
+$teal: #027180;
+$greenHover: #024b55;
+
+$overlay: rgba(0,0,0,0.6);
+$black: #333333;
+$none:rgba(0,0,0,0);
+
+//breakpoint
+
+$mob: "(max-width: 767px)";
+$mobTab: "(min-width: 320px) and (max-width: 1023px)";
+$tab: "(min-width: 768px) and (max-width: 1023px)";
+$tabDesk: "(min-width: 768px)";
+$desk: "(min-width: 1024px)";

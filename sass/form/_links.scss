@@ -1,0 +1,67 @@
+p > a,
+.inpageNav li > a{
+    color:$blue;
+    float:none;
+
+    &:focus{
+        &:before{
+            top:-2px;
+            height:100%;
+        }
+       
+    }
+}
+
+.txtLink{
+    &:focus{
+        &:before{
+            top:10px;
+            height:calc(100% - 10px);
+        }
+    }
+
+}
+
+p > a, 
+.inpageNav li > a,
+.txtLink{
+    border-bottom: 1px solid;
+    margin-bottom: -1px;
+    width: auto;
+    position: relative;
+    display: inline;
+    @extend .txtBlue;
+
+  
+    &:hover{
+        margin-bottom:0;
+        border:0;
+    }
+
+    &:focus{
+        outline: 3px solid $blueFocus;
+    }
+
+}
+
+a.active{
+    position: relative;
+    @extend .txtBld;
+
+    &:before{
+        content:'';
+        width:5px;
+        height:100%;
+        background:$blue;
+        color:$white;
+        position:absolute;
+        top:0;
+        left:0;
+
+    }
+    
+
+    &:hover{
+        color:$blue;
+    }
+}
