@@ -1,0 +1,11 @@
+ul{
+    &.discList{
+        padding: 10px 20px;
+
+        li{
+            list-style-type: disc;
+            width:100%;
+        }
+    }
+}
+

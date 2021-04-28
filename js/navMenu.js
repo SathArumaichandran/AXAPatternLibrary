@@ -33,6 +33,13 @@ navMenu.innerHTML = `
 
     <nav>
         <ul class="menuList">
+
+            <li class="pad20">
+                <a href="dl/AXAPatternLibrary.zip" class="btn">
+                    Download Pattern Library
+                </a>
+            </li>
+
             <li id="menus">
 
             </li>
