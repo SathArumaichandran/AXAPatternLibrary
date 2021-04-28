@@ -1,7 +1,8 @@
 .bx{
     position:relative;
-    padding-left:30px;
+    padding-left:35px;
     text-transform: uppercase;
+    
     //@extend .txtBld;
 
     &:before{
@@ -9,10 +10,39 @@
         position:absolute;
         width:25px;
         height:25px;
+        border-radius: 15px;
         left:0;
         top:0;
     }
 }
+
+.bxWhite{
+    &:before{
+        @extend .bgWhite;
+        border:1px solid $grey;
+    }
+}
+
+.bxLegendOrange{
+    &:before{
+        @extend .bgLegendOrange;
+    }
+}
+
+.bxLegendLightGreen{
+    &:before{
+        @extend .bgLegendLightGreen;
+    }
+}
+
+.bxLegendGreen{
+    &:before{
+        @extend .bgLegendGreen;
+    }
+}
+
+
+
 
 .bxBlue{
     &:before{

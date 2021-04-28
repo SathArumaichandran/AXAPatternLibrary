@@ -156,6 +156,7 @@ main{
 
 .imgSet{
     display: flex;
+    flex-wrap: wrap;
     text-align: center;
     @extend .marT10B10;
     
@@ -170,12 +171,24 @@ main{
         float:none;
     }
 
+    img{
+        width: auto;
+    }
+
     figcaption{
-        @extend .txt14;
+        @extend .txt16;
+
+        .bx{
+            text-transform: none;
+            margin: 15px 0 0;
+            width: 100%;
+        }
     }
     
-    .btnImg {
-        height:50px;
+    &.btnImg {
+        img{
+            height:50px;
+        }
     }
 
     li{
@@ -183,7 +196,7 @@ main{
     }
 
     figure{
-        @extend .marR10B10;
+        @extend .padR20B20;
     }
 
 }
@@ -209,6 +222,18 @@ main{
     background: $white;
 }
 
+.bgLegendOrange{
+    background: $legendOrange;
+}
+
+.bgLegendLightGreen{
+    background: $legendLightGreen;
+}
+
+.bgLegendGreen{
+    background: $legendGreen;
+}
+
 .bgLightGrey{
     background: $lightGrey;
 }
@@ -232,6 +257,10 @@ main{
 
 .bgBlue{
     background: $blue;
+}
+
+.bgDarkBlue{
+    background: $darkBlue;
 }
 
 .bgTeal{

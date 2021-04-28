@@ -22,13 +22,16 @@
 }
 
 img {
-  width: auto;
   height: auto;
-  max-width: 100%;
 }
 
 p {
   padding: 15px 0 10px;
+}
+
+p img {
+  width: auto;
+  max-width: 100%;
 }
 
 strong {
@@ -400,6 +403,8 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   text-align: center;
 }
 
@@ -418,7 +423,17 @@ body {
   float: none;
 }
 
-.imgSet .btnImg {
+.imgSet img {
+  width: auto;
+}
+
+.imgSet figcaption .bx {
+  text-transform: none;
+  margin: 15px 0 0;
+  width: 100%;
+}
+
+.imgSet.btnImg img {
   height: 50px;
 }
 
@@ -439,8 +454,20 @@ body {
   overflow-x: auto;
 }
 
-.bgWhite {
+.bgWhite, .bxWhite:before {
   background: #ffffff;
+}
+
+.bgLegendOrange, .bxLegendOrange:before {
+  background: #F9CC9D;
+}
+
+.bgLegendLightGreen, .bxLegendLightGreen:before {
+  background: #E1EFDB;
+}
+
+.bgLegendGreen, .bxLegendGreen:before {
+  background: rgba(112, 205, 101, 0.76);
 }
 
 .bgLightGrey, .bxLightGrey:before, tr:nth-child(odd), .type1 .row3 {
@@ -467,8 +494,12 @@ body {
   background: #333333;
 }
 
-.bgBlue, .bxBlue:before {
+.bgBlue, .bxBlue:before, a.btn {
   background: #00008f;
+}
+
+.bgDarkBlue, a.btn:hover {
+  background: #000072;
 }
 
 .bgTeal, .bxTeal:before {
@@ -491,9 +522,18 @@ body {
   background: #C24E00;
 }
 
+ul.discList {
+  padding: 10px 20px;
+}
+
+ul.discList li {
+  list-style-type: disc;
+  width: 100%;
+}
+
 .bx {
   position: relative;
-  padding-left: 30px;
+  padding-left: 35px;
   text-transform: uppercase;
 }
 
@@ -502,8 +542,13 @@ body {
   position: absolute;
   width: 25px;
   height: 25px;
+  border-radius: 15px;
   left: 0;
   top: 0;
+}
+
+.bxWhite:before {
+  border: 1px solid #e5e5e5;
 }
 
 table {
@@ -816,8 +861,12 @@ td {
   margin: 10px 0;
 }
 
-.marR10B10, .imgSet figure {
-  margin: 0 10px 10px 0;
+.padR20B20, .imgSet figure {
+  padding: 0 20px 20px 0;
+}
+
+.menuList .btn {
+  border: none;
 }
 
 .menuList a {
@@ -849,7 +898,7 @@ h3 {
   padding: 20px 0;
 }
 
-.txtWhite, .type2 tr:first-child {
+.txtWhite, .type2 tr:first-child, .menuList .btn {
   color: #ffffff;
 }
 
@@ -977,8 +1026,8 @@ h3 {
   }
 }
 
-.txt14, .imgSet figcaption {
-  font-size: 14px;
+.txt16, .imgSet figcaption {
+  font-size: 16px;
 }
 
 .optCon label {
@@ -1134,5 +1183,15 @@ a.active:before {
 
 a.active:hover {
   color: #00008f;
+}
+
+a.btn {
+  border-radius: 3px;
+}
+
+a.btn:focus {
+  -webkit-box-shadow: 0 0 0 3px #4d90fe;
+          box-shadow: 0 0 0 3px #4d90fe;
+  outline: none;
 }
 /*# sourceMappingURL=style.css.map */

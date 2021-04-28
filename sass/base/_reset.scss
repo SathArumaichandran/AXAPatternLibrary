@@ -22,14 +22,16 @@
 }
 
 img{
-    width:auto;
     height: auto;
-    max-width: 100%;
 }
 
 p{
     padding:15px 0 10px;
 
+    img{
+        width: auto;
+        max-width: 100%;
+    }
     
 }
 
