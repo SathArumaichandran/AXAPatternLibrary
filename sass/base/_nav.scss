@@ -1,5 +1,11 @@
 .menuList{
 
+    .toggleContent{
+        li>a{
+            padding: 15px 20px 15px 40px;
+        }
+    }
+
     .btn{
         @extend .txtWhite;
         border: none;
