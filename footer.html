@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Text area</title>
+    <title>Footer</title>
     <link href="css/style.min.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="css/prism.css">
+    <link href="css/prism.css" rel="stylesheet" type="text/css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
@@ -49,17 +49,24 @@
             <div class="wrap">
 
                 <h1>
-                    Text area
+                    Footer
                 </h1>
 
                 <ul class="list">
-                    <li>Textarea is to let users enter more than single line entry however this comes with 1000 character limitation to let users to enter a message which can be short, conveyed to our back-office staff and data storage. In most cases, it is an optional field</li>
-                    <li>Also, nice to have a feature which let users make the textarea wider by dragging the bottom right. I think this feature comes by default for &lt;textarea&gt; HTML tag</li>
-                    <li>Scrollbar and expand item of the element are browser default styling</li>
+                    <li>
+                        The footer shows the secure logo and links to legals and terms that open as an external link
+                    </li>
+
+                    <li>
+                        Use the footer at the bottom of every page
+                    </li>
                 </ul>
 
                 <p></p>
 
+                <p>
+                    <img src="assets/dummyImage.jpg" alt="">
+                </p>
 
                 <ul class="inpageNav">
 
@@ -93,65 +100,11 @@
                 </ul>
                 <p></p>
 
-                <p>
-                    <img src="assets/dummyImage.jpg" alt="">
-                </p>
-
-                <div id="interactionState" class="component">
-
-                    <h3>
-                        Default
-                    </h3>
-
-                    <p>
-                        <img src="assets/dummyImage.jpg" alt="">
-                    </p>
-
-                    <h3>
-                        Hover
-                    </h3>
-
-                    <p>
-                        <img src="assets/dummyImage.jpg" alt="">
-                    </p>
-
-                    <h3>
-                        Focus
-                    </h3>
-
-                    <p>
-                        <img src="assets/dummyImage.jpg" alt="">
-                    </p>
-
-                    <h3>
-                        Error
-                    </h3>
-
-                    <p>
-                        <img src="assets/dummyImage.jpg" alt="">
-                    </p>
-
-
-                    <h3>
-                        Error and focus
-                    </h3>
-
-                    <p>
-                        <img src="assets/dummyImage.jpg" alt="">
-                    </p>
-
-
-                </div>
-
                 <div id="styling" class="component">
 
-                    <h3>
-                        Select with longer answer
-                    </h3>
-
-                    <p>
-                        <img src="assets/dummyImage.jpg" alt="">
-                    </p>  
+                    <h2>
+                        Styling
+                    </h2>
                  
                     <h3>
                         Mobile 320px - 767px
@@ -181,18 +134,13 @@
                 </div>
 
                 <div id="accessibility" class="component">
+
                     <h2>
                         Accessibility
                     </h2>
-
+                 
                     <p>
-                        Tab to focus in and focus out the element. Read error message if any as soon as the element gets off focused. For default behaviour of screen reader to work, use semantic HTML or alternatively,
-                    </p>
-
-                    <p>
-                        <a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/textbox_role" target="_blank">
-                            https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/textbox_role
-                        </a>
+                        When including navigation options within the footer use Aria to enhance the findability and comprehension. The role="navigation" attribute or nav element coupled with a relevant label (e.g. aria-label="Footer links") will achieve this.
                     </p>
 
                 </div>
@@ -215,32 +163,35 @@
 
                 </div>
 
-                <div id="Reference" class="component">
+                <div id="reference" class="component">
+
                     <h2>
                         Reference
                     </h2>
 
                     <p>
-                        <a href="https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_textarea">
-                            https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_textarea
-                        </a>
+                       <a href="https://luna.sainsburys.co.uk/components/footer" target="_blank">https://luna.sainsburys.co.uk/components/footer</a>
+
                     </p>
 
                 </div>
 
                 <div id="related" class="component">
+
                     <h2>
                         Related components
                     </h2>
 
                     <p>
-                        <a href="textbox.html">
-                            Textbox
+                        <a href="links.html">
+                            Links
                         </a>
+                        <br>
+                        The style of links under the footer is the same as links.
                     </p>
 
                 </div>
-                
+
             </div>
             
         </article>
@@ -266,7 +217,6 @@
     <script src="js/navMenu.js"></script>
     <script src="js/template.js"></script>
     <script src="js/prism.js"></script>
-    
 </body>
 
 </html>

@@ -75,7 +75,19 @@ function sameheight(){
 
 }
 
+function overlay(){
+    setTimeout(function(){
+        $('.overlay').fadeOut();
+    },500);
+    
+}
 
+
+
+$(document).ready(function(){
+    sameheight();
+    overlay();
+});
 
 
 

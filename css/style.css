@@ -21,6 +21,16 @@
   transition: 0.2s ease;
 }
 
+pre {
+  height: auto;
+  max-height: 400px;
+}
+
+.token {
+  width: auto;
+  float: none;
+}
+
 img {
   height: auto;
 }
@@ -269,6 +279,119 @@ body {
   padding: 0 0 0 10px;
 }
 
+.loopAnimation {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100px;
+  height: auto;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.loopProduct {
+  width: 100px;
+  height: 100px;
+}
+
+.loopProduct li {
+  width: 100px;
+  height: 100px;
+  -webkit-animation: product 6s ease-in-out infinite;
+          animation: product 6s ease-in-out infinite;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.loopProduct li:first-child {
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+}
+
+.loopProduct li:nth-child(2) {
+  -webkit-animation-delay: -2s;
+          animation-delay: -2s;
+}
+
+.loopProduct li:last-child {
+  -webkit-animation-delay: -4s;
+          animation-delay: -4s;
+}
+
+@-webkit-keyframes product {
+  0%, 100% {
+    opacity: 1;
+  }
+  33% {
+    opacity: 0;
+  }
+  66% {
+    opacity: 0;
+  }
+}
+
+@keyframes product {
+  0%, 100% {
+    opacity: 1;
+  }
+  33% {
+    opacity: 0;
+  }
+  66% {
+    opacity: 0;
+  }
+}
+
+.loopDots {
+  width: auto;
+  float: none;
+  display: inline-block;
+}
+
+.loopDots li {
+  width: 10px;
+  height: 10px;
+  border: 1px solid #00008f;
+  border-radius: 50%;
+  margin: 0 0 0 5px;
+  -webkit-animation: dots 1.5s ease-in-out infinite;
+          animation: dots 1.5s ease-in-out infinite;
+}
+
+.loopDots li:first-child {
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+}
+
+.loopDots li:nth-child(2) {
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+
+.loopDots li:last-child {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+@-webkit-keyframes dots {
+  0%, 100% {
+    background: none;
+  }
+  50% {
+    background: #00008f;
+  }
+}
+
+@keyframes dots {
+  0%, 100% {
+    background: none;
+  }
+  50% {
+    background: #00008f;
+  }
+}
+
 .mobMenuLbl {
   margin-top: -100px;
   padding: 60px 20px 20px;
@@ -302,6 +425,42 @@ body {
 
 .component:last-child {
   border: none;
+}
+
+.component .code-toolbar > .toolbar {
+  opacity: 1;
+  width: auto;
+  position: static;
+}
+
+.component .code-toolbar > .toolbar .copy-to-clipboard-button {
+  cursor: pointer;
+  border-radius: 3px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.component .code-toolbar > .toolbar .copy-to-clipboard-button:focus {
+  -webkit-box-shadow: 0 0 0 3px #4d90fe;
+          box-shadow: 0 0 0 3px #4d90fe;
+  outline: none;
+}
+
+.component .code-toolbar > .toolbar .copy-to-clipboard-button > span {
+  padding: 10px 15px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background: none;
+  color: inherit;
+}
+
+.overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
 }
 
 .accordionBtn {
@@ -454,7 +613,7 @@ body {
   overflow-x: auto;
 }
 
-.bgWhite, .bxWhite:before {
+.bgWhite, .overlay, .bxWhite:before {
   background: #ffffff;
 }
 
@@ -494,11 +653,11 @@ body {
   background: #333333;
 }
 
-.bgBlue, .bxBlue:before, a.btn {
+.bgBlue, .component .code-toolbar > .toolbar .copy-to-clipboard-button, .bxBlue:before, a.btn {
   background: #00008f;
 }
 
-.bgDarkBlue, a.btn:hover {
+.bgDarkBlue, .component .code-toolbar > .toolbar .copy-to-clipboard-button:hover, a.btn:hover {
   background: #000072;
 }
 
@@ -865,6 +1024,10 @@ td {
   padding: 0 20px 20px 0;
 }
 
+.menuList .toggleContent li > a {
+  padding: 15px 20px 15px 40px;
+}
+
 .menuList .btn {
   border: none;
 }
@@ -898,7 +1061,7 @@ h3 {
   padding: 20px 0;
 }
 
-.txtWhite, .type2 tr:first-child, .menuList .btn {
+.txtWhite, .component .code-toolbar > .toolbar .copy-to-clipboard-button, .type2 tr:first-child, .menuList .btn {
   color: #ffffff;
 }
 
@@ -951,7 +1114,7 @@ h3 {
   text-align: left;
 }
 
-.txtC, .type2 th,
+.txtC, .loopAnimation, .type2 th,
 .type2 td {
   text-align: center;
 }
@@ -1016,12 +1179,12 @@ h3 {
   }
 }
 
-.txt18, body, h3, .optCon label {
+.txt18, body, .component .code-toolbar > .toolbar .copy-to-clipboard-button > span, h3, .optCon label {
   font-size: 18px;
 }
 
 @media (max-width: 767px) {
-  .txt18, body, h3, .optCon label {
+  .txt18, body, .component .code-toolbar > .toolbar .copy-to-clipboard-button > span, h3, .optCon label {
     font-size: 16px;
   }
 }

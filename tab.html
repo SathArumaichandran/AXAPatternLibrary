@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Text area</title>
+    <title>Tab</title>
     <link href="css/style.min.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="css/prism.css">
+    <link href="css/prism.css" rel="stylesheet" type="text/css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
@@ -49,17 +49,35 @@
             <div class="wrap">
 
                 <h1>
-                    Text area
+                    Tab
                 </h1>
 
                 <ul class="list">
-                    <li>Textarea is to let users enter more than single line entry however this comes with 1000 character limitation to let users to enter a message which can be short, conveyed to our back-office staff and data storage. In most cases, it is an optional field</li>
-                    <li>Also, nice to have a feature which let users make the textarea wider by dragging the bottom right. I think this feature comes by default for &lt;textarea&gt; HTML tag</li>
-                    <li>Scrollbar and expand item of the element are browser default styling</li>
+                    <li>
+                        Tabs are used to switch content within the same view
+                    </li>
+
+                    <li>
+                        Tabs are parallel in nature. Display the relevant content to the selected tab
+                    </li>
+
+                    <li>
+                        Place tabs on top of the switching content
+                    </li>
+
+                    <li>
+                        One of the tabs UI is always pre-selected. Tab option label should be short
+                    </li>
+
+                    <li>
+                        Mobile tab options are transformed to anchor links with optional "content" title and all tab content shown by default
+                    </li>
+
                 </ul>
 
-                <p></p>
 
+
+                <p></p>
 
                 <ul class="inpageNav">
 
@@ -93,11 +111,11 @@
                 </ul>
                 <p></p>
 
-                <p>
-                    <img src="assets/dummyImage.jpg" alt="">
-                </p>
+                <div id="styling" class="component">
 
-                <div id="interactionState" class="component">
+                    <h2>
+                        Styling
+                    </h2>
 
                     <h3>
                         Default
@@ -106,7 +124,7 @@
                     <p>
                         <img src="assets/dummyImage.jpg" alt="">
                     </p>
-
+                    
                     <h3>
                         Hover
                     </h3>
@@ -116,42 +134,20 @@
                     </p>
 
                     <h3>
-                        Focus
+                        On focus
                     </h3>
 
                     <p>
                         <img src="assets/dummyImage.jpg" alt="">
-                    </p>
+                    </p> 
 
                     <h3>
-                        Error
+                        Selected
                     </h3>
 
                     <p>
                         <img src="assets/dummyImage.jpg" alt="">
-                    </p>
-
-
-                    <h3>
-                        Error and focus
-                    </h3>
-
-                    <p>
-                        <img src="assets/dummyImage.jpg" alt="">
-                    </p>
-
-
-                </div>
-
-                <div id="styling" class="component">
-
-                    <h3>
-                        Select with longer answer
-                    </h3>
-
-                    <p>
-                        <img src="assets/dummyImage.jpg" alt="">
-                    </p>  
+                    </p> 
                  
                     <h3>
                         Mobile 320px - 767px
@@ -181,18 +177,13 @@
                 </div>
 
                 <div id="accessibility" class="component">
+
                     <h2>
                         Accessibility
                     </h2>
 
                     <p>
-                        Tab to focus in and focus out the element. Read error message if any as soon as the element gets off focused. For default behaviour of screen reader to work, use semantic HTML or alternatively,
-                    </p>
-
-                    <p>
-                        <a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/textbox_role" target="_blank">
-                            https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/textbox_role
-                        </a>
+                        <a href="https://www.w3.org/TR/wai-aria-practices-1.1/examples/tabs/tabs-1/tabs.html" target="_blank">https://www.w3.org/TR/wai-aria-practices-1.1/examples/tabs/tabs-1/tabs.html</a>
                     </p>
 
                 </div>
@@ -215,32 +206,77 @@
 
                 </div>
 
-                <div id="Reference" class="component">
+                <div id="reference" class="component">
+
                     <h2>
                         Reference
                     </h2>
 
                     <p>
-                        <a href="https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_textarea">
-                            https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_textarea
-                        </a>
+                       <a href="https://www.nngroup.com/articles/tabs-used-right/" target="_blank">https://www.nngroup.com/articles/tabs-used-right/</a>
                     </p>
-
-                </div>
-
-                <div id="related" class="component">
-                    <h2>
-                        Related components
-                    </h2>
 
                     <p>
-                        <a href="textbox.html">
-                            Textbox
-                        </a>
+                        <a href="https://uxplanet.org/tabs-for-mobile-ux-design-d4cc4d9410d1#:~:text=Tabs%20are%20one%20of%20the,making%20navigation%20experience%20more%20clear." target="_blank">https://uxplanet.org/tabs-for-mobile-ux-design-d4cc4d9410d1#:~:text=Tabs%20are%20one%20of%20the,making%20navigation%20experience%20more%20clear.</a>
                     </p>
-
                 </div>
+
                 
+
+                <div id="comments" class="component">
+                    <h2>
+                        Comments
+                    </h2>
+
+                    <ul class="table">
+                        <li>
+                            <ul>
+                                <li class="cl clDate">
+                                    Date
+                                </li>
+            
+                                <li class="cl">
+                                    Comment
+                                </li>
+            
+                                <li class="cl clTeam">
+                                    Team
+                                </li>
+            
+                            </ul>
+                            
+                        </li>
+    
+                        <li>
+                            <ul>
+                                <li class="cl clDate">
+                                    12 Aug 2020
+                                </li>
+            
+                                <li class="cl clComment">
+                                    We have decided to go with tab options as anchor links upfront and all tab contents shown by default for mobile. Accordion option dropped due to not sure where the rest of the tab options shown if the first opened by default.
+                                </li>
+            
+                                <li class="cl clTeam">
+                                    Mark Christopherson, UX Designer <br>
+                                    Waiho Yum, UX Designer <br>
+                                    Sath Arumaichandran, UX Designer <br>
+                                    Mandy Man, UX Designer <br>
+                                    Ben Kielty, Front-end Developer <br>
+                                    Mark Rossiter, Digital Executive
+                                </li>
+            
+                            </ul>
+                        </li>
+                   
+    
+    
+                    </ul>
+                   
+                </div>
+
+                
+
             </div>
             
         </article>
@@ -266,7 +302,6 @@
     <script src="js/navMenu.js"></script>
     <script src="js/template.js"></script>
     <script src="js/prism.js"></script>
-    
 </body>
 
 </html>
