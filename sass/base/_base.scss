@@ -286,7 +286,13 @@ main{
 .inpageNav{
     word-break: break-all;
     & > li{
-        padding:5px 0;
+        position: relative;
+        padding: 5px 0;
+
+        &:before{
+            content: '-';
+            padding: 0 0 0 -10px;
+        }
     }
 }
 

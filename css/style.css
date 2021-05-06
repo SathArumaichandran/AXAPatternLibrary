@@ -555,7 +555,13 @@ body {
 }
 
 .inpageNav > li {
+  position: relative;
   padding: 5px 0;
+}
+
+.inpageNav > li:before {
+  content: '-';
+  padding: 0 0 0 -10px;
 }
 
 .imgSet {
@@ -1061,6 +1067,10 @@ h3 {
   padding: 20px 0;
 }
 
+h4 {
+  padding: 10px 0;
+}
+
 .txtWhite, .component .code-toolbar > .toolbar .copy-to-clipboard-button, .type2 tr:first-child, .menuList .btn {
   color: #ffffff;
 }
@@ -1189,7 +1199,7 @@ h3 {
   }
 }
 
-.txt16, .imgSet figcaption {
+.txt16, .imgSet figcaption, h4 {
   font-size: 16px;
 }
 
