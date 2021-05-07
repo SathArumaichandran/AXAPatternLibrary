@@ -315,6 +315,7 @@ main{
 
     img{
         width: auto;
+        max-width: 100%;
     }
 
     figcaption{
@@ -362,6 +363,14 @@ main{
 
 .bgWhite{
     background: $white;
+}
+
+.bgLegendBlue{
+    background: $legendBlue;
+}
+
+.bgLegendLightBlue{
+    background: $legendLightBlue;
 }
 
 .bgLegendOrange{
