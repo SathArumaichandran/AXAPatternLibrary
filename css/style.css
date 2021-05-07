@@ -590,6 +590,7 @@ body {
 
 .imgSet img {
   width: auto;
+  max-width: 100%;
 }
 
 .imgSet figcaption .bx {
@@ -619,8 +620,16 @@ body {
   overflow-x: auto;
 }
 
-.bgWhite, .overlay, .bxWhite:before {
+.bgWhite, .overlay, .bxWhite:before, .bxShadow:before {
   background: #ffffff;
+}
+
+.bgLegendBlue, .bxLegendBlue:before {
+  background: #81D3F8;
+}
+
+.bgLegendLightBlue, .bxLegendLightBlue:before {
+  background: #D0E2F4;
 }
 
 .bgLegendOrange, .bxLegendOrange:before {
@@ -710,10 +719,33 @@ ul.discList li {
   border-radius: 15px;
   left: 0;
   top: 0;
+  line-height: 25px;
+}
+
+.bxP:before {
+  content: 'P';
+}
+
+.bxA:before {
+  content: 'A';
+}
+
+.bxT:before {
+  content: 'T';
+}
+
+.bxB:before {
+  content: 'B';
 }
 
 .bxWhite:before {
   border: 1px solid #e5e5e5;
+}
+
+.bxShadow:before {
+  border: 1px solid #e5e5e5;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.35);
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.35);
 }
 
 table {
@@ -1124,7 +1156,7 @@ h4 {
   text-align: left;
 }
 
-.txtC, .loopAnimation, .type2 th,
+.txtC, .loopAnimation, .bx:before, .type2 th,
 .type2 td {
   text-align: center;
 }
@@ -1199,7 +1231,7 @@ h4 {
   }
 }
 
-.txt16, .imgSet figcaption, h4 {
+.txt16, .imgSet figcaption, .bx:before, h4 {
   font-size: 16px;
 }
 

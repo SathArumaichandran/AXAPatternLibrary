@@ -13,13 +13,61 @@
         border-radius: 15px;
         left:0;
         top:0;
+        line-height: 25px;
+        @extend .txtC;
+        @extend .txt16;
     }
 }
+
+.bxP{
+    &:before{
+        content: 'P';
+    }
+}
+
+.bxA{
+    &:before{
+        content: 'A';
+    }
+}
+
+.bxT{
+    &:before{
+        content: 'T';
+    }
+}
+
+.bxB{
+    &:before{
+        content: 'B';
+    }
+}
+
 
 .bxWhite{
     &:before{
         @extend .bgWhite;
         border:1px solid $grey;
+    }
+}
+
+.bxShadow{
+    &:before{
+        @extend .bgWhite;
+        border:1px solid $grey;
+        box-shadow: 0 0 5px rgba(0,0,0,0.35);
+    }
+}
+
+.bxLegendBlue{
+    &:before{
+        @extend .bgLegendBlue;
+    }
+}
+
+.bxLegendLightBlue{
+    &:before{
+        @extend .bgLegendLightBlue;
     }
 }
 
