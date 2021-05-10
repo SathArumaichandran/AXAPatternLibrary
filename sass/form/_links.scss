@@ -2,6 +2,7 @@ p > a,
 .inpageNav li > a{
     color:$blue;
     float:none;
+    word-break: break-all;
 
     &:focus{
         &:before{

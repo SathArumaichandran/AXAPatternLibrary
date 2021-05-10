@@ -59,6 +59,30 @@
     }
 }
 
+.bxLegendGrey{
+    &:before{
+        @extend .bgLegendGrey;
+    }
+}
+
+.bxLegendRed{
+    &:before{
+        @extend .bgLegendRed;
+    }
+}
+
+.bxLegendLightGrey{
+    &:before{
+        @extend .bgLegendLightGrey;
+    }
+}
+
+.bxLegendPink{
+    &:before{
+        @extend .bgLegendPink;
+    }
+}
+
 .bxLegendBlue{
     &:before{
         @extend .bgLegendBlue;
