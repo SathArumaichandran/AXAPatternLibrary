@@ -1,11 +1,6 @@
 function sameheight(){
     if($('.desk').is(":visible") || $('.tab').is(":visible")){
 
-        for(i=0; i < 10; i++){
-            console.log("i = "+ i)
-        }
-
-
         //row1
         var row1 = 0;
         $('.row1').each(function(){  
@@ -82,11 +77,42 @@ function overlay(){
     
 }
 
+function feedback(){
+    var feedbackContainer = document.querySelector('.feedback');
+    var feedWrap = document.createElement('div');
+
+    feedWrap.innerHTML = `
+        <p>
+            <strong>
+                Help improve this page
+            </strong>
+        </p>
+        <p>
+            Please share your ideas, suggestions or comments.
+        </p>
+        <p>
+            <a href="" id="emailFeedback" class="btn">
+                Email us
+            </a>
+        </p>
+    `;
+    feedbackContainer.append(feedWrap);
+
+    
+    var email = "sath.arumaichandran@swiftcover.com";
+    var pageURL = window.location.href;
+    var mail = "mailto:"+email+"?Subject="+pageURL;
+
+    var emailBtn = document.querySelector('#emailFeedback');
+    emailBtn.setAttribute('href',mail);
+}
+
 
 
 $(document).ready(function(){
     sameheight();
     overlay();
+    feedback();
 });
 
 
