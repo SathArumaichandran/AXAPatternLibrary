@@ -289,11 +289,39 @@ main{
         position: relative;
         padding: 5px 0;
 
-        &:before{
-            content: '-';
-            padding: 0 0 0 -10px;
+        a { 
+            &:after{
+                content: '';
+                position: absolute;
+                width: 6px;
+                height: 8px;
+                top: 10px;
+                right: -15px;
+                border-left: 1px solid $blue;
+                border-bottom: 1px solid $blue;
+            }
+
+            span{
+                position: absolute;
+                top: 16px;
+                right: -16px;
+                width: 5px;
+                height: 5px;
+                border-top: 1px solid #00008f;
+                border-right: 1px solid #00008f;
+                transform: rotate(45deg);
+            }
         }
+
+        
     }
+}
+
+.feedback{
+    padding: 0 20px 20px 20px;
+    border: 1px solid $blue;
+    border-radius: 10px;
+    margin: 20px 0;
 }
 
 .imgSet{
@@ -359,6 +387,12 @@ main{
 .scrollable{
     max-width: 100%;
     overflow-x: auto;
+}
+
+.stickyNote{
+    padding: 0 10px;
+    background: $yellowNote;
+    width: 200px;
 }
 
 .bgWhite{
