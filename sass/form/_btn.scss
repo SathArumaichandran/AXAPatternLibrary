@@ -1,7 +1,11 @@
 a{
     &.btn{
         @extend .bgBlue;
+        @extend .txtWhite;
+        @extend .txt18;
         border-radius: 3px;
+        padding: 10px 15px;
+
 
         &:hover{
             @extend .bgDarkBlue;

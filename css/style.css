@@ -582,6 +582,14 @@ body {
           transform: rotate(45deg);
 }
 
+.feedback {
+  padding: 0 20px 20px 20px;
+  border: 1px solid #00008f;
+  border-radius: 10px;
+  margin: 20px 0;
+
+}
+
 .imgSet {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1143,7 +1151,7 @@ h4 {
   padding: 10px 0;
 }
 
-.txtWhite, .component .code-toolbar > .toolbar .copy-to-clipboard-button, .type2 tr:first-child, .menuList .btn {
+.txtWhite, .component .code-toolbar > .toolbar .copy-to-clipboard-button, .type2 tr:first-child, .menuList .btn, a.btn {
   color: #ffffff;
 }
 
@@ -1167,8 +1175,8 @@ h4 {
   color: #914146;
 }
 
-.txtBlue, .accordionBtn, .menuList a, h1, p > a,
-.inpageNav li > a,
+.txtBlue, .accordionBtn, .menuList a, h1, p a,
+.inpageNav li a,
 .txtLink {
   color: #00008f;
 }
@@ -1265,12 +1273,12 @@ h4 {
   }
 }
 
-.txt18, body, .component .code-toolbar > .toolbar .copy-to-clipboard-button > span, h3, .optCon label {
+.txt18, body, .component .code-toolbar > .toolbar .copy-to-clipboard-button > span, h3, .optCon label, a.btn {
   font-size: 18px;
 }
 
 @media (max-width: 767px) {
-  .txt18, body, .component .code-toolbar > .toolbar .copy-to-clipboard-button > span, h3, .optCon label {
+  .txt18, body, .component .code-toolbar > .toolbar .copy-to-clipboard-button > span, h3, .optCon label, a.btn {
     font-size: 16px;
   }
 }
@@ -1393,8 +1401,8 @@ p > a:focus:before,
   height: calc(100% - 10px);
 }
 
-p > a,
-.inpageNav li > a,
+p a,
+.inpageNav li a,
 .txtLink {
   border-bottom: 1px solid;
   margin-bottom: -1px;
@@ -1403,15 +1411,15 @@ p > a,
   display: inline;
 }
 
-p > a:hover,
-.inpageNav li > a:hover,
+p a:hover,
+.inpageNav li a:hover,
 .txtLink:hover {
   margin-bottom: 0;
   border: 0;
 }
 
-p > a:focus,
-.inpageNav li > a:focus,
+p a:focus,
+.inpageNav li a:focus,
 .txtLink:focus {
   outline: 3px solid #4d90fe;
 }
@@ -1437,6 +1445,7 @@ a.active:hover {
 
 a.btn {
   border-radius: 3px;
+  padding: 10px 15px;
 }
 
 a.btn:focus {

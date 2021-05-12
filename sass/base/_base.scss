@@ -317,6 +317,13 @@ main{
     }
 }
 
+.feedback{
+    padding: 0 20px 20px 20px;
+    border: 1px solid $blue;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
 .imgSet{
     display: flex;
     flex-wrap: wrap;
