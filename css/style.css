@@ -668,7 +668,7 @@ body {
   background: #D7D7D7;
 }
 
-.bgLegendPink, .bxLegendPink:before, .menuList .flag.design:after {
+.bgLegendPink, .flag.design:after, .bxLegendPink:before {
   background: #FBD1D1;
 }
 
@@ -684,11 +684,11 @@ body {
   background: #F9CC9D;
 }
 
-.bgLegendLightGreen, .bxLegendLightGreen:before, .menuList .flag.code:after {
+.bgLegendLightGreen, .flag.code:after, .bxLegendLightGreen:before {
   background: #E1EFDB;
 }
 
-.bgLegendGreen, .bxLegendGreen:before, .menuList .flag.completed:after {
+.bgLegendGreen, .flag.completed:after, .bxLegendGreen:before {
   background: rgba(112, 205, 101, 0.76);
 }
 
@@ -742,6 +742,36 @@ body {
 
 .bgRedOrange, .bxRedOrange:before {
   background: #C24E00;
+}
+
+.flag {
+  width: 20px;
+  height: 20px;
+  float: none;
+  margin-left: 10px;
+}
+
+.flag:after {
+  content: '';
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  background: red;
+  border-radius: 50%;
+  line-height: 20px;
+  font-size: 14px;
+}
+
+.flag.completed:after {
+  content: '✓';
+}
+
+.flag.new:after {
+  content: 'N';
+}
+
+.flag.update:after {
+  content: 'U';
 }
 
 ul.discList {
@@ -1135,36 +1165,6 @@ td {
   display: none;
 }
 
-.menuList .flag {
-  width: 20px;
-  height: 20px;
-  float: none;
-  margin-left: 10px;
-}
-
-.menuList .flag:after {
-  content: '';
-  width: 20px;
-  height: 20px;
-  position: absolute;
-  background: red;
-  border-radius: 50%;
-  line-height: 20px;
-  font-size: 14px;
-}
-
-.menuList .flag.completed:after {
-  content: '✓';
-}
-
-.menuList .flag.new:after {
-  content: 'N';
-}
-
-.menuList .flag.update:after {
-  content: 'U';
-}
-
 .fltL {
   float: left;
 }
@@ -1246,8 +1246,8 @@ h4 {
   text-align: left;
 }
 
-.txtC, .loopAnimation, .bx:before, .type2 th,
-.type2 td, .menuList .flag:after {
+.txtC, .loopAnimation, .flag:after, .bx:before, .type2 th,
+.type2 td {
   text-align: center;
 }
 
