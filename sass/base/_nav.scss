@@ -11,16 +11,83 @@
         border: none;
     }
 
-    a{
-      padding:15px 20px;
-      border-bottom: 1px solid $grey;  
-      @extend .txtBlue;
+    &.status{
+        a{
+            &>span{
+                display: inline;
+            }
+        }
 
-      &:hover{
-          @extend .bgGrey;
-      }
-      &:focus{
-          outline:3px solid $blueFocus;
-      }
     }
+
+    a{
+        padding:15px 20px;
+        border-bottom: 1px solid $grey;  
+        @extend .txtBlue;
+
+        &:hover{
+            @extend .bgGrey;
+        }
+        &:focus{
+            outline:3px solid $blueFocus;
+        }
+
+        &>span{
+            display: none;
+        }
+
+    }
+
+    .flag{
+        width: 20px;
+        height: 20px;
+        float: none;
+        margin-left: 10px;
+
+        &:after{
+            content: '';
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            background: red;
+            border-radius: 50%;
+            line-height: 20px;
+            font-size: 14px;
+            @extend .txtC;
+        }
+
+        &.completed{
+            &:after{
+                content: '✓';
+                @extend .bgLegendGreen;
+            }
+        }
+
+        &.design{
+            &:after{
+                @extend .bgLegendPink;
+            }
+        }
+
+        &.code{
+            &:after{
+                @extend .bgLegendLightGreen;
+            }
+        }
+
+        &.new{
+            &:after{
+                content: 'N';
+            }
+        }
+
+        &.update{
+            &:after{
+                content: 'U';
+            }
+        }
+
+          
+    }
+    
 }

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   padding: 0;
   margin: 0;
@@ -667,7 +668,7 @@ body {
   background: #D7D7D7;
 }
 
-.bgLegendPink, .bxLegendPink:before {
+.bgLegendPink, .bxLegendPink:before, .menuList .flag.design:after {
   background: #FBD1D1;
 }
 
@@ -676,18 +677,18 @@ body {
 }
 
 .bgLegendLightBlue, .bxLegendLightBlue:before {
-  background: #292929;
+  background: #D0E2F4;
 }
 
 .bgLegendOrange, .bxLegendOrange:before {
   background: #F9CC9D;
 }
 
-.bgLegendLightGreen, .bxLegendLightGreen:before {
+.bgLegendLightGreen, .bxLegendLightGreen:before, .menuList .flag.code:after {
   background: #E1EFDB;
 }
 
-.bgLegendGreen, .bxLegendGreen:before {
+.bgLegendGreen, .bxLegendGreen:before, .menuList .flag.completed:after {
   background: rgba(112, 205, 101, 0.76);
 }
 
@@ -1117,6 +1118,10 @@ td {
   border: none;
 }
 
+.menuList.status a > span {
+  display: inline;
+}
+
 .menuList a {
   padding: 15px 20px;
   border-bottom: 1px solid #e5e5e5;
@@ -1124,6 +1129,40 @@ td {
 
 .menuList a:focus {
   outline: 3px solid #4d90fe;
+}
+
+.menuList a > span {
+  display: none;
+}
+
+.menuList .flag {
+  width: 20px;
+  height: 20px;
+  float: none;
+  margin-left: 10px;
+}
+
+.menuList .flag:after {
+  content: '';
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  background: red;
+  border-radius: 50%;
+  line-height: 20px;
+  font-size: 14px;
+}
+
+.menuList .flag.completed:after {
+  content: '✓';
+}
+
+.menuList .flag.new:after {
+  content: 'N';
+}
+
+.menuList .flag.update:after {
+  content: 'U';
 }
 
 .fltL {
@@ -1208,7 +1247,7 @@ h4 {
 }
 
 .txtC, .loopAnimation, .bx:before, .type2 th,
-.type2 td {
+.type2 td, .menuList .flag:after {
   text-align: center;
 }
 
