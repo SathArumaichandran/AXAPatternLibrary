@@ -559,9 +559,27 @@ body {
   padding: 5px 0;
 }
 
-.inpageNav > li:before {
-  content: '-';
-  padding: 0 0 0 -10px;
+.inpageNav > li a:after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  height: 8px;
+  top: 10px;
+  right: -15px;
+  border-left: 1px solid #00008f;
+  border-bottom: 1px solid #00008f;
+}
+
+.inpageNav > li a span {
+  position: absolute;
+  top: 16px;
+  right: -16px;
+  width: 5px;
+  height: 5px;
+  border-top: 1px solid #00008f;
+  border-right: 1px solid #00008f;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 
 .imgSet {
@@ -620,8 +638,30 @@ body {
   overflow-x: auto;
 }
 
+.stickyNote {
+  padding: 0 10px;
+  background: #FFDF25;
+  width: 200px;
+}
+
 .bgWhite, .overlay, .bxWhite:before, .bxShadow:before {
   background: #ffffff;
+}
+
+.bgLegendGrey, .bxLegendGrey:before {
+  background: #646B7D;
+}
+
+.bgLegendRed, .bxLegendRed:before {
+  background: #C91432;
+}
+
+.bgLegendLightGrey, .bxLegendLightGrey:before {
+  background: #D7D7D7;
+}
+
+.bgLegendPink, .bxLegendPink:before {
+  background: #FBD1D1;
 }
 
 .bgLegendBlue, .bxLegendBlue:before {
@@ -629,7 +669,7 @@ body {
 }
 
 .bgLegendLightBlue, .bxLegendLightBlue:before {
-  background: #D0E2F4;
+  background: #292929;
 }
 
 .bgLegendOrange, .bxLegendOrange:before {
@@ -1133,6 +1173,10 @@ h4 {
   color: #00008f;
 }
 
+.txtGreen {
+  color: #148936;
+}
+
 .txtRed {
   color: #c91432;
 }
@@ -1335,6 +1379,7 @@ p > a,
 .inpageNav li > a {
   color: #00008f;
   float: none;
+  word-break: break-all;
 }
 
 p > a:focus:before,
