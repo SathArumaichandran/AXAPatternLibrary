@@ -109,27 +109,34 @@ $(document).ready(function(){
         menus = [
             {
                 "name":"Introduction",
-                "link":"index"
+                "link":"index",
+                "flag":"completed",
+                "note":"some note"
             },
             {
                 "name":"Accessibility personas &amp; resources",
-                "link":"accessibility_personas"
+                "link":"accessibility_personas",
+                "flag":"new code"
             },
             {
                 "name":"Typography",
-                "link":"typography"
+                "link":"typography",
+                "flag":"update code"
             },
             {
                 "name":"Colours",
-                "link":"colours"
+                "link":"colours",
+                "flag":"new design"
             },
             {
                 "name":"Breakpoint / Page layout",
-                "link":"breakpoint"
+                "link":"breakpoint",
+                "flag":"update design"
             },
             {
                 "name":"Change log",
-                "link":"log"
+                "link":"log",
+                "flag":"update design"
             },
     
         ];
@@ -138,7 +145,7 @@ $(document).ready(function(){
         text = "<ul>";
     
         for (i = 0; i < mLen; i++) {
-            text += "<li><a href='"+ menus[i].link +".html'>" + menus[i].name + "</a></li>";
+            text += "<li><a href='"+ menus[i].link +".html'>" + menus[i].name + "<span class='flag " + menus[i].flag + "'></span></a></li>";
         }
     
         text += "</ul>"
@@ -152,11 +159,13 @@ $(document).ready(function(){
         templateMenus = [
             {
                 "name":"Question set",
-                "link":"question"
+                "link":"question",
+                "flag":"completed"
             },
             {
                 "name":"Error states in form",
-                "link":"error"
+                "link":"error",
+                "flag":"completed"
             }
     
         ];
@@ -166,7 +175,7 @@ $(document).ready(function(){
         text = "<ul>";
     
         for (i = 0; i < tmLen; i++) {
-            text += "<li><a href='"+ templateMenus[i].link +".html'>" + templateMenus[i].name + "</a></li>";
+            text += "<li><a href='"+ templateMenus[i].link +".html'>" + templateMenus[i].name + "<span class='flag " + templateMenus[i].flag + "'></span></a></li>";
         }
     
         text += "</ul>"
@@ -180,66 +189,82 @@ $(document).ready(function(){
         moleculeMenus = [
             {
                 "name":"Accordion",
-                "link":"accordion"
+                "link":"accordion",
+                "flag":"completed"
             },
             {
                 "name":"Descriptive accordion for form buttons",
-                "link":"descriptiveAccordionForFormButtons"
+                "link":"descriptiveAccordionForFormButtons",
+                "flag":"completed"
             },
             {
                 "name":"Back to top button",
-                "link":"backToTop"
+                "link":"backToTop",
+                "flag":"completed"
             },{
                 "name":"Buttons",
-                "link":"buttons"
+                "link":"buttons",
+                "flag":"completed"
             },
             {
                 "name":"Single answer buttons",
-                "link":"singleanswerbutton"
+                "link":"singleanswerbutton",
+                "flag":"completed"
             },
             {
                 "name":"Single answer buttons with a clickable image",
-                "link":"singleanswerbuttonImage"
+                "link":"singleanswerbuttonImage",
+                "flag":"completed"
             },
             {
                 "name":"Check boxes",
-                "link":"checkboxes"
+                "link":"checkboxes",
+                "flag":"completed"
             },
             {
                 "name":"Links",
-                "link":"links"
+                "link":"links",
+                "flag":"completed"
             },
             {
                 "name":"Phone number link",
-                "link":"phoneNumberLink"
+                "link":"phoneNumberLink",
+                "flag":"completed"
             },
             {
                 "name":"Loading",
-                "link":"loading"
+                "link":"loading",
+                "flag":"completed"
             },
             {
                 "name":"Radio buttons",
-                "link":"radioButtons"
+                "link":"radioButtons",
+                "flag":"completed"
             },
             {
                 "name":"Radio buttons card",
-                "link":"radioButtonsCard"
+                "link":"radioButtonsCard",
+                "flag":"completed"
             },
             {
                 "name":"Dropdown",
-                "link":"dropdown"
+                "link":"dropdown",
+                "flag":"completed"
             },
             {
                 "name":"Textarea",
-                "link":"textarea"
+                "link":"textarea",
+                "flag":"completed"
             },
             {
                 "name":"Text box",
-                "link":"textbox"
+                "link":"textbox",
+                "flag":"completed"
             },
             {
                 "name":"Toggle switch",
-                "link":"toggleswitch"
+                "link":"toggleswitch",
+                "flag":"completed"
             }
     
     
@@ -250,7 +275,7 @@ $(document).ready(function(){
         text = "<ul>";
     
         for (i = 0; i < mmLen; i++) {
-            text += "<li><a href='"+ moleculeMenus[i].link +".html'>" + moleculeMenus[i].name + "</a></li>";
+            text += "<li><a href='"+ moleculeMenus[i].link +".html'>" + moleculeMenus[i].name + "<span class='flag " + moleculeMenus[i].flag + "'></span></a></li>";
         }
     
         text += "</ul>"
@@ -264,51 +289,63 @@ $(document).ready(function(){
         componentMenus = [
             {
                 "name":"Breadcrumb",
-                "link":"breadcrumb"
+                "link":"breadcrumb",
+                "flag":"completed"
             },
             {
                 "name":"Contextual help",
-                "link":"contextualHelp"
+                "link":"contextualHelp",
+                "flag":"completed"
             },
             {
                 "name":"Datepicker",
-                "link":"datepicker"
+                "link":"datepicker",
+                "flag":"completed"
             },
             {
                 "name":"Footer",
-                "link":"footer"
+                "link":"footer",
+                "flag":"completed"
             },
             {
                 "name":"Header",
-                "link":"header"
+                "link":"header",
+                "flag":"completed"
             },
             {
                 "name":"Modal box",
-                "link":"modalbox"
+                "link":"modalbox",
+                "flag":"completed"
             },
             {
                 "name":"Notification banners",
-                "link":"notificationBanners"
+                "link":"notificationBanners",
+                "flag":"completed"
             },
             {
                 "name":"Password creation",
-                "link":"passwordCreation"
+                "link":"passwordCreation",
+                "flag":"completed"
             },
             {
                 "name":"Progress bar",
-                "link":"progressbar"
+                "link":"progressbar",
+                "flag":"completed"
             },
             {
                 "name":"Tab",
-                "link":"tab"
+                "link":"tab",
+                "flag":"completed"
             },
             {
                 "name":"Table",
-                "link":"table"
+                "link":"table",
+                "flag":"completed"
             },
             {
                 "name":"Three column summary",
-                "link":"threeColumn"
+                "link":"threeColumn",
+                "flag":"completed"
             }
     
     
@@ -319,7 +356,7 @@ $(document).ready(function(){
         text = "<ul>";
     
         for (i = 0; i < cmLen; i++) {
-            text += "<li><a href='"+ componentMenus[i].link +".html'>" + componentMenus[i].name + "</a></li>";
+            text += "<li><a href='"+ componentMenus[i].link +".html'>" + componentMenus[i].name + "<span class='flag " + componentMenus[i].flag + "'></span></a></li>";
         }
     
         text += "</ul>"
