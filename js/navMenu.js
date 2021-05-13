@@ -353,7 +353,7 @@ $(document).ready(function(){
             },
             {
                 "name":"Datepicker",
-                "link":"datepicker",
+                "link":"datePicker",
                 "flag":"edit update design",
                 "status":"new code",
                 "designer":"sath",
@@ -377,7 +377,7 @@ $(document).ready(function(){
             },
             {
                 "name":"Modal box",
-                "link":"modalbox",
+                "link":"modalBox",
                 "flag":"edit update design",
                 "status":"new code",
                 "designer":"sath",
@@ -401,7 +401,7 @@ $(document).ready(function(){
             },
             {
                 "name":"Progress bar",
-                "link":"progressbar",
+                "link":"progressBar",
                 "flag":"edit update design",
                 "status":"update code",
                 "designer":"mandy",
