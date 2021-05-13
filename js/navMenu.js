@@ -308,7 +308,7 @@ $(document).ready(function(){
             },
             {
                 "name":"Toggle switch",
-                "link":"toggleswitch",
+                "link":"toggleSwitch",
                 "flag":"edit update design",
                 "status":"new code",
                 "designer":"sath",
