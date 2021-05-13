@@ -680,7 +680,7 @@ body {
   background: #D0E2F4;
 }
 
-.bgLegendOrange, .bxLegendOrange:before {
+.bgLegendOrange, .flag.design.edit:after, .flag.code.edit:after, .bxLegendOrange:before {
   background: #F9CC9D;
 }
 
@@ -748,15 +748,14 @@ body {
   width: 20px;
   height: 20px;
   float: none;
-  margin-left: 10px;
+  margin: -5px 0 -5px 10px;
 }
 
 .flag:after {
-  content: '';
+  content: '-';
   width: 20px;
   height: 20px;
   position: absolute;
-  background: red;
   border-radius: 50%;
   line-height: 20px;
   font-size: 14px;
@@ -766,12 +765,58 @@ body {
   content: '✓';
 }
 
+.flag.designer:after {
+  -webkit-box-shadow: 0 0 0 1px #646B7D;
+          box-shadow: 0 0 0 1px #646B7D;
+}
+
+.flag.developer:after {
+  -webkit-box-shadow: 0 0 5px #333333;
+          box-shadow: 0 0 5px #333333;
+}
+
+.flag.sath:after {
+  content: 'S';
+}
+
+.flag.waiho:after {
+  content: 'W';
+}
+
+.flag.mandy:after {
+  content: 'M';
+}
+
+.flag.brijesh:after {
+  content: 'B';
+}
+
 .flag.new:after {
   content: 'N';
 }
 
+.flag.new.design:after {
+  -webkit-box-shadow: 0 0 0 1px #c91432;
+          box-shadow: 0 0 0 1px #c91432;
+}
+
+.flag.new.code:after {
+  -webkit-box-shadow: 0 0 0 1px #E1EFDB;
+          box-shadow: 0 0 0 1px #E1EFDB;
+}
+
 .flag.update:after {
   content: 'U';
+}
+
+.flag.update.design:after {
+  -webkit-box-shadow: 0 0 0 1px #c91432;
+          box-shadow: 0 0 0 1px #c91432;
+}
+
+.flag.update.code:after {
+  -webkit-box-shadow: 0 0 0 1px #E1EFDB;
+          box-shadow: 0 0 0 1px #E1EFDB;
 }
 
 ul.discList {
@@ -1149,7 +1194,7 @@ td {
 }
 
 .menuList.status a > span {
-  display: inline;
+  display: inline-block;
 }
 
 .menuList a {

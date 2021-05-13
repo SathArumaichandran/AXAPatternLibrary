@@ -3,14 +3,13 @@
     width: 20px;
     height: 20px;
     float: none;
-    margin-left: 10px;
+    margin: -5px 0 -5px 10px;
 
     &:after{
-        content: '';
+        content: '-';
         width: 20px;
         height: 20px;
         position: absolute;
-        background: red;
         border-radius: 50%;
         line-height: 20px;
         font-size: 14px;
@@ -28,11 +27,57 @@
         &:after{
             @extend .bgLegendPink;
         }
+
+        &.edit{
+            &:after{
+                @extend .bgLegendOrange;
+            }
+        }
     }
 
     &.code{
         &:after{
             @extend .bgLegendLightGreen;
+        }
+
+        &.edit{
+            &:after{
+                @extend .bgLegendOrange;
+            }
+        }
+    }
+
+
+    &.designer{
+        &:after{
+            box-shadow: 0 0 0 1px $legendGrey;
+        }
+    }
+
+    &.developer{
+        &:after{
+            box-shadow: 0 0 5px $black;
+        }
+    }
+
+    &.sath{
+        &:after{
+            content: 'S';
+        }
+    }
+    &.waiho{
+        &:after{
+            content: 'W';
+        }
+    }
+    &.mandy{
+        &:after{
+            content: 'M';
+        }
+    }
+    &.brijesh{
+        &:after{
+            content: 'B';
         }
     }
 
@@ -40,13 +85,36 @@
         &:after{
             content: 'N';
         }
+
+        &.design{
+            &:after{
+                box-shadow: 0 0 0 1px $red;
+            }
+        }
+
+        &.code{
+            &:after{
+                box-shadow: 0 0 0 1px $legendLightGreen;
+            }
+        }
     }
 
     &.update{
         &:after{
             content: 'U';
         }
-    }
 
-        
+        &.design{
+            &:after{
+                box-shadow: 0 0 0 1px $red;
+            }
+        }
+
+        &.code{
+            &:after{
+                box-shadow: 0 0 0 1px $legendLightGreen;
+            }
+        }
+    }
+    
 }

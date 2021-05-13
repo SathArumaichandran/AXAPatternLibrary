@@ -105,14 +105,15 @@ function feedback(){
 
     var emailBtn = document.querySelector('#emailFeedback');
     emailBtn.setAttribute('href',mail);
+
+    //turn off feedback
+    feedbackContainer.classList.add('dispNone');
 }
-
-
 
 $(document).ready(function(){
     sameheight();
-    overlay();
     feedback();
+    overlay();
 });
 
 

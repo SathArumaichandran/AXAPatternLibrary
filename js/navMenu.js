@@ -84,15 +84,16 @@ navMenu.innerHTML = `
             </li>
             
         </ul>
+
+        
     </nav>
 
-
-</div>
-
+    
 
 
 </div>
 
+</div>
 
 `
 
@@ -110,33 +111,32 @@ $(document).ready(function(){
             {
                 "name":"Introduction",
                 "link":"index",
-                "flag":"completed",
-                "note":"some note"
+                "flag":"completed"
             },
             {
                 "name":"Accessibility personas &amp; resources",
                 "link":"accessibility_personas",
-                "flag":"new code"
+                "flag":"completed"
             },
             {
                 "name":"Typography",
                 "link":"typography",
-                "flag":"update code"
+                "flag":"completed"
             },
             {
                 "name":"Colours",
                 "link":"colours",
-                "flag":"new design"
+                "flag":"completed"
             },
             {
                 "name":"Breakpoint / Page layout",
                 "link":"breakpoint",
-                "flag":"update design"
+                "flag":"completed"
             },
             {
                 "name":"Change log",
                 "link":"log",
-                "flag":"update design"
+                "flag":"completed"
             },
     
         ];
@@ -190,81 +190,129 @@ $(document).ready(function(){
             {
                 "name":"Accordion",
                 "link":"accordion",
-                "flag":"completed"
+                "flag":"completed",
+                "status":"update code",
+                "designer":"waiho",
+                "developer":"brijesh"
             },
             {
                 "name":"Descriptive accordion for form buttons",
                 "link":"descriptiveAccordionForFormButtons",
-                "flag":"completed"
+                "flag":"edit update code",
+                "status":"new code",
+                "designer":"waiho",
+                "developer":"brijesh"
             },
             {
                 "name":"Back to top button",
                 "link":"backToTop",
-                "flag":"completed"
+                "flag":"edit update code",
+                "status":"completed",
+                "designer":"waiho",
+                "developer":"brijesh"
             },{
                 "name":"Buttons",
                 "link":"buttons",
-                "flag":"completed"
+                "flag":"edit update code",
+                "status":"completed",
+                "designer":"waiho",
+                "developer":"brijesh"
             },
             {
                 "name":"Single answer buttons",
                 "link":"singleanswerbutton",
-                "flag":"completed"
+                "flag":"edit update design",
+                "status":"completed",
+                "designer":"mandy",
+                "developer":"brijesh"
             },
             {
                 "name":"Single answer buttons with a clickable image",
                 "link":"singleanswerbuttonImage",
-                "flag":"completed"
+                "flag":"edit update design",
+                "status":"completed",
+                "designer":"mandy",
+                "developer":"brijesh"
             },
             {
                 "name":"Check boxes",
                 "link":"checkboxes",
-                "flag":"completed"
+                "flag":"edit update design",
+                "status":"update code",
+                "designer":"mandy",
+                "developer":"brijesh"
             },
             {
                 "name":"Links",
                 "link":"links",
-                "flag":"completed"
+                "flag":"edit update design",
+                "status":"completed",
+                "designer":"waiho",
+                "developer":"brijesh"
             },
             {
                 "name":"Phone number link",
                 "link":"phoneNumberLink",
-                "flag":"completed"
+                "flag":"edit update design",
+                "status":"update code",
+                "designer":"sath",
+                "developer":"brijesh"
             },
             {
                 "name":"Loading",
                 "link":"loading",
-                "flag":"completed"
+                "flag":"edit update design",
+                "status":"new code",
+                "designer":"sath",
+                "developer":"brijesh"
             },
             {
                 "name":"Radio buttons",
                 "link":"radioButtons",
-                "flag":"completed"
+                "flag":"edit update design",
+                "status":"update code",
+                "designer":"mandy",
+                "developer":"brijesh"
             },
             {
                 "name":"Radio buttons card",
                 "link":"radioButtonsCard",
-                "flag":"completed"
+                "flag":"edit update design",
+                "status":"update code",
+                "designer":"mandy",
+                "developer":"brijesh"
             },
             {
                 "name":"Dropdown",
                 "link":"dropdown",
-                "flag":"completed"
+                "flag":"edit update design",
+                "status":"update code",
+                "designer":"mandy",
+                "developer":"brijesh"
             },
             {
                 "name":"Textarea",
                 "link":"textarea",
-                "flag":"completed"
+                "flag":"edit update design",
+                "status":"update code",
+                "designer":"sath",
+                "developer":"brijesh"
             },
             {
                 "name":"Text box",
                 "link":"textbox",
-                "flag":"completed"
+                "flag":"edit update design",
+                "status":"update code",
+                "designer":"sath",
+                "developer":"brijesh"
             },
             {
                 "name":"Toggle switch",
                 "link":"toggleswitch",
-                "flag":"completed"
+                "flag":"edit update design",
+                "status":"new code",
+                "designer":"sath",
+                "developer":"brijesh"
             }
     
     
@@ -275,7 +323,7 @@ $(document).ready(function(){
         text = "<ul>";
     
         for (i = 0; i < mmLen; i++) {
-            text += "<li><a href='"+ moleculeMenus[i].link +".html'>" + moleculeMenus[i].name + "<span class='flag " + moleculeMenus[i].flag + "'></span></a></li>";
+            text += "<li><a href='"+ moleculeMenus[i].link +".html'>" + moleculeMenus[i].name + "<span class='flag " + moleculeMenus[i].flag + " title='" + moleculeMenus[i].flag + "'></span> <span class='flag status " + moleculeMenus[i].status + " title='" + moleculeMenus[i].status + "'></span> <span class='flag designer " + moleculeMenus[i].designer + " designer='" + moleculeMenus[i].designer + "'></span> <span class='flag developer " + moleculeMenus[i].developer + " designer='" + moleculeMenus[i].developer + "'></span></a></li>";
         }
     
         text += "</ul>"
@@ -290,65 +338,164 @@ $(document).ready(function(){
             {
                 "name":"Breadcrumb",
                 "link":"breadcrumb",
-                "flag":"completed"
+                "flag":"edit update design",
+                "status":"completed",
+                "designer":"waiho",
+                "developer":"brijesh"
             },
             {
                 "name":"Contextual help",
                 "link":"contextualHelp",
-                "flag":"completed"
+                "flag":"edit update design",
+                "status":"update design",
+                "designer":"sath",
+                "developer":"brijesh"
             },
             {
                 "name":"Datepicker",
                 "link":"datepicker",
-                "flag":"completed"
+                "flag":"edit update design",
+                "status":"new code",
+                "designer":"sath",
+                "developer":"brijesh"
             },
             {
                 "name":"Footer",
                 "link":"footer",
-                "flag":"completed"
+                "flag":"edit update design",
+                "status":"update code",
+                "designer":"mandy",
+                "developer":"brijesh"
             },
             {
                 "name":"Header",
                 "link":"header",
-                "flag":"completed"
+                "flag":"edit update design",
+                "status":"update design",
+                "designer":"waiho",
+                "developer":"brijesh"
             },
             {
                 "name":"Modal box",
                 "link":"modalbox",
-                "flag":"completed"
+                "flag":"edit update design",
+                "status":"new code",
+                "designer":"sath",
+                "developer":"brijesh"
             },
             {
                 "name":"Notification banners",
                 "link":"notificationBanners",
-                "flag":"completed"
+                "flag":"edit update design",
+                "status":"update code",
+                "designer":"waiho",
+                "developer":"brijesh"
             },
             {
                 "name":"Password creation",
                 "link":"passwordCreation",
-                "flag":"completed"
+                "flag":"edit new design",
+                "status":"new code",
+                "designer":"sath",
+                "developer":"brijesh"
             },
             {
                 "name":"Progress bar",
                 "link":"progressbar",
-                "flag":"completed"
+                "flag":"edit update design",
+                "status":"update code",
+                "designer":"mandy",
+                "developer":"brijesh"
             },
             {
                 "name":"Tab",
                 "link":"tab",
-                "flag":"completed"
+                "flag":"edit update design",
+                "status":"new code",
+                "designer":"sath",
+                "developer":"brijesh"
             },
             {
                 "name":"Table",
                 "link":"table",
-                "flag":"completed"
+                "flag":"edit update design",
+                "status":"new code",
+                "designer":"mandy",
+                "developer":"brijesh"
             },
             {
                 "name":"Three column summary",
                 "link":"threeColumn",
-                "flag":"completed"
+                "flag":"edit update design",
+                "status":"update code",
+                "designer":"sath",
+                "developer":"brijesh"
+            },
+            {
+                "name":"Sticky nav bar",
+                "link":"",
+                "flag":"edit new design",
+                "status":"new design",
+                "designer":"sath",
+                "developer":""
+            },
+            {
+                "name":"Skip link",
+                "link":"",
+                "flag":"edit new design",
+                "status":"new design",
+                "designer":"",
+                "developer":""
+            },
+            {
+                "name":"Single price module",
+                "link":"",
+                "flag":"edit new design",
+                "status":"new design",
+                "designer":"sath",
+                "developer":""
+            },
+            {
+                "name":"Map",
+                "link":"",
+                "flag":"edit new design",
+                "status":"new design",
+                "designer":"",
+                "developer":""
+            },
+            {
+                "name":"Pagination",
+                "link":"",
+                "flag":"edit new design",
+                "status":"new design",
+                "designer":"",
+                "developer":""
+            },
+            {
+                "name":"Tag",
+                "link":"",
+                "flag":"edit new design",
+                "status":"new design",
+                "designer":"",
+                "developer":""
+            },
+            {
+                "name":"File upload",
+                "link":"",
+                "flag":"edit new design",
+                "status":"new design",
+                "designer":"sath",
+                "developer":""
+            },
+            {
+                "name":"Summary info card",
+                "link":"",
+                "flag":"edit new design",
+                "status":"new design",
+                "designer":"waiho",
+                "developer":"brijesh"
             }
-    
-    
+
         ];
     
         cmLen = componentMenus.length;
@@ -356,7 +503,7 @@ $(document).ready(function(){
         text = "<ul>";
     
         for (i = 0; i < cmLen; i++) {
-            text += "<li><a href='"+ componentMenus[i].link +".html'>" + componentMenus[i].name + "<span class='flag " + componentMenus[i].flag + "'></span></a></li>";
+            text += "<li><a href='"+ componentMenus[i].link +".html'>" + componentMenus[i].name + "<span class='flag " + componentMenus[i].flag + "'></span> <span class='flag status " + componentMenus[i].status + "'></span> <span class='flag designer " + componentMenus[i].designer + "'></span> <span class='flag developer " + componentMenus[i].developer + "'></span></a></li>";
         }
     
         text += "</ul>"
@@ -365,19 +512,7 @@ $(document).ready(function(){
         $("#componentMenus").html(text);
     }
 
-  
-    
-    
-
-    
-
-    setTimeout(function(){
-        sameheight();
-        hightlightMenu();
-    }, 500)
-
-        
-
+    hightlightMenu();
 });
 
 
@@ -395,13 +530,5 @@ function hightlightMenu(){
             $(this).addClass("active");
             $(this).closest('ul').closest('li').find('input[type="checkbox"]').prop('checked', true);
         }
-    })
-
-    
-    
+    })    
 }
-
-
-      
-    
-
