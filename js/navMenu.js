@@ -513,6 +513,7 @@ $(document).ready(function(){
     }
 
     hightlightMenu();
+    backLog();
 });
 
 
@@ -530,5 +531,15 @@ function hightlightMenu(){
             $(this).addClass("active");
             $(this).closest('ul').closest('li').find('input[type="checkbox"]').prop('checked', true);
         }
+    })    
+}
+
+// highlight the menus
+
+function backLog(){
+    var backLogItems = $('a[href=".html"');
+    
+    backLogItems.each(function(){
+        $(this).hide();
     })    
 }
