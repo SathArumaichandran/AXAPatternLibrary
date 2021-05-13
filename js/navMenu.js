@@ -236,7 +236,7 @@ $(document).ready(function(){
             },
             {
                 "name":"Check boxes",
-                "link":"checkboxes",
+                "link":"checkBoxes",
                 "flag":"edit update design",
                 "status":"update code",
                 "designer":"mandy",
